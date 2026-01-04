@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "axios": "^1.13.2",
+    "rimraf": "^6.1.2",
     "zustand": "^5.0.8"
   },
   "name": "my-project",
@@ -8,8 +9,8 @@
   "description": "To **strona internetowa do przesyłania wiadomości** — pełna aplikacja webowa z frontendem i backendem.  \r Umożliwia użytkownikom **rejestrację, logowanie i komunikację w czasie rzeczywistym**.  \r Projekt jest przykładem **aplikacji typu messenger** z własnym API, bazą danych i logiką backendową.",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix frontend && npm run build --prefix frontend && rm -rf backend/public && cp -r frontend/dist backend/public && npm install --prefix backend",
-    "start": "npm run start --prefix backend"
+    "build": "npm install --prefix frontend && npm run build --prefix frontend && npx rimraf backend/public && xcopy frontend\\dist backend\\public /E /I && npm install --prefix backend",
+    "start": "cross-env NODE_ENV=production npm run start --prefix backend"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/M01L3/aplikacja_typu_messenger/issues"
   },
-  "homepage": "https://github.com/M01L3/aplikacja_typu_messenger#readme"
+  "homepage": "https://github.com/M01L3/aplikacja_typu_messenger#readme",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "cross-env": "^10.1.0"
+  }
 }
