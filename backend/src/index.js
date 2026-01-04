@@ -10,11 +10,13 @@ import { connectDB } from "./lib/db.js";
 import authRoutes from "./routes/auth.route.js";
 import messageRoutes from "./routes/message.route.js";
 import { app, server } from "./lib/socket.js";
+import {fileURLToPath} from "url";
 
 
 dotenv.config();
 
 const PORT = process.env.PORT;
+const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.resolve();
 
 app.use(express.json());
@@ -34,7 +36,7 @@ if (process.env.NODE_ENV === "production") {
 
   app.use(express.static(frontendDistPath));
 
-  app.get("/:path(*)", (req, res) => {
+  app.use((req, res) => {
     res.sendFile(path.join(frontendDistPath, "index.html"));
   });
 }
