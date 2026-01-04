@@ -8,7 +8,7 @@
   "description": "To **strona internetowa do przesyłania wiadomości** — pełna aplikacja webowa z frontendem i backendem.  \r Umożliwia użytkownikom **rejestrację, logowanie i komunikację w czasie rzeczywistym**.  \r Projekt jest przykładem **aplikacji typu messenger** z własnym API, bazą danych i logiką backendową.",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix backend && npm install --prefix frontend && npm build --prefix frontend",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "npm run start --prefix backend"
   },
   "repository": {
