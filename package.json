@@ -2,5 +2,24 @@
   "dependencies": {
     "axios": "^1.13.2",
     "zustand": "^5.0.8"
-  }
+  },
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "To **strona internetowa do przesyłania wiadomości** — pełna aplikacja webowa z frontendem i backendem.  \r Umożliwia użytkownikom **rejestrację, logowanie i komunikację w czasie rzeczywistym**.  \r Projekt jest przykładem **aplikacji typu messenger** z własnym API, bazą danych i logiką backendową.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M01L3/aplikacja_typu_messenger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M01L3/aplikacja_typu_messenger/issues"
+  },
+  "homepage": "https://github.com/M01L3/aplikacja_typu_messenger#readme"
 }
