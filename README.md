@@ -24,7 +24,6 @@ Projekt jest full‑stack i składa się z dwóch części:
 /frontend – część klienta (HTML, CSS, JavaScript)
 /backend – część serwerowa (Node.js +, API, baza danych mongoDB, cloudinary)
 
-
 Front i backend komunikują się przez własne API REST, a wszystkie dane są przechowywane w bazie danych mongoDB.
 
 Autor
