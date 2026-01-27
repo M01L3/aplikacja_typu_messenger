@@ -27,35 +27,6 @@ Projekt jest full‑stack i składa się z dwóch części:
 
 Front i backend komunikują się przez własne API REST, a wszystkie dane są przechowywane w bazie danych mongoDB.
 
----
-
-## 📥 Instalacja i uruchomienie
-
-1. Sklonuj repo:
-```bash
-git clone https://github.com/M01L3/aplikacja_typu_messenger.git
-
-Przejdź do katalogu projektu:
-
-cd aplikacja_typu_messenger
-
-Zainstaluj zależności backendu i frontendu:
-
-cd backend
-npm install
-cd ../frontend
-npm install
-
-Uruchom backend:
-cd backend
-npm start
-
-Uruchom frontend w osobnym terminalu:
-cd frontend
-npm start
-
-Otwórz przeglądarkę na http://localhost:PORT
-
 Autor
 
 M01L3 – projekt stworzony w ramach nauki programowania i praktyk szkolnych.
